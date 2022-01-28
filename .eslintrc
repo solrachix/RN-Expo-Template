@@ -1,0 +1,16 @@
+{ 
+  "extends": "react-native-wcandillon",
+  "rules": { 
+    // suppress errors for missing 'import React' in files
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+     // allow jsx syntax in js files (for next.js project)
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".tsx"] }], //should add ".ts" if typescript project
+    "prettier/prettier": "error",
+    "space-before-function-paren": "off",
+    "react/prop-types": "off",
+
+    "quotes": ["error", "single"],
+    "import/no-default-export": "off"
+  }
+} 
